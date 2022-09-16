@@ -64,21 +64,11 @@ it('GET /todos/name/todoTestBySupertest --> specific by name', () => {
 
   
 
- it('DELETE /todos/name/:name --> delete USER by name', () => {
+it('DELETE /todos/name/:name --> delete USER by name', () => {
     return request(app)
     .delete('/todos/name/todoTestBySupertest')
     .expect('Content-type', /json/)
     .expect(200)
  });
-
-
-// it('POST /todos --> validate request body', () => { 
-//     return request(app)   
-//     .post('/todos')
-//     .send({
-//         name: 123
-//     })
-//     .expect(422)
-// });
 
 })
