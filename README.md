@@ -32,6 +32,18 @@ To post a new to do:
 curl -H 'Content-Type: application/json' -d '{"name":"play tenis"}' -X POST http://localhost:3000/todos
 ```
 
+# How to execute locally with docker compose
+
+The variable of DATABASE_URL is defined inside of file docker-compose.yml. The default option is configured to container mongodb-compose.
+
+```
+docker-compose up -d --build
+```
+
+Afther this you can acces trough localhost via 80 port:
+```
+curl -v localhost/todos/ 
+```
 
 
 From: https://www.youtube.com/watch?v=M44umyYPiuo
