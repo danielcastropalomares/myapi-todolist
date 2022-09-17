@@ -27,7 +27,7 @@ The variable of DATABASE_URL is defined inside of file docker-compose.yml. The d
 docker-compose up -d --build
 ```
 
-Afther this you can acces trough localhost via 80 port:
+After this you can acces trough localhost via 80 port:
 ```
 curl -v localhost/todos/ 
 ```
